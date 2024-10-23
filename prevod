@@ -1,2 +1,4 @@
 import pandas as pd
 from astropy.table import Table
+df_external = pd.read_parquet('external_catalog.parquet')
+df_external.to_csv('/Users/izzygarland/Astro/FULL_POP_BARS_AGN/catalogues/GZ_DESI/external_catalog.csv')
